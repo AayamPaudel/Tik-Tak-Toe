@@ -1,2 +1,2 @@
 # Tik-Tak-Toe
-This is a tic tac toe game. click the boxes turn by ture to play. The rules are as usual
+This is a tic tac toe game. click the boxes turn by ture to play. The rules are as usual. Align three of the same marks (X or O) horizontally, vertically or diagonally. Who does it first wins the game. I made this so that anyone can enjoy the game anytime, anywhere.
