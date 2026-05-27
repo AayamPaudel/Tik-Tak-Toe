@@ -32,3 +32,7 @@ a.forEach((a) => {
     })
 })
 ```
+This code is the main block containing the logic of the game
+
+
+
