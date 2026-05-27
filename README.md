@@ -11,6 +11,24 @@ let arr = [
     [1, 4, 7],
     [2, 5, 8],
     [2, 4, 6]
-]```
+]
+```
+If the win conditions are met, the game decides the winner. If there is no winner, it is a tie.
 
-If 
+```javascript
+a.forEach((a) => {
+    a.addEventListener("click", () => {
+        if (turn) {
+            a.innerText = "X"
+            turn = false
+        }
+        else {
+            a.innerText = "O"
+            turn = true
+        }
+        check()
+        a.disabled = true
+        
+    })
+})
+```
