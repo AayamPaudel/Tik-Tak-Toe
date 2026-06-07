@@ -2,6 +2,7 @@ let a = document.querySelectorAll(".button")
 let resetbtn = document.getElementById("reset")
 let result = document.getElementById("winner")
 let turn = true
+let count = 0
 
 let arr = [
     [0, 1, 2],
@@ -24,7 +25,9 @@ a.forEach((a) => {
             a.innerText = "O"
             turn = true
         }
+        count++
         check()
+        tie()
         a.disabled = true
         
     })
@@ -48,6 +51,11 @@ const check = () => {
 
 function win() {
     result.innerText = turn ? "Winner: O" : "Winner: X"
+}
+
+function tie() {
+    if(count === 9 && !win())
+    result.innerText = "Its a tie!"
 }
 
 resetbtn.addEventListener("click", () => {

@@ -11,6 +11,12 @@
 body{
     background-color: var(--body-color);
     text-align: center;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 8vmin;
 }
 
 .container{
@@ -35,7 +41,31 @@ body{
     width: 18vmin;
     border-radius: 5vmin;
     border: none;
-    box-shadow: 0 0 5vmin var(--button);
     font-size: 8vmin;
-    background-color: var(--button);
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid transparent;
+    background-color: white;
+    color: black;
+}
+
+.button:hover{
+    background: transparent;
+    color: cyan;
+    border: 1vmin solid cyan;
+}
+
+#reset{
+    padding: 3vmin;
+    font-size: 4vmin;
+    border: 2px solid transparent;
+    border-radius: 5vmin;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-30px);
+}
+
+#reset:hover{
+    background: transparent;
+    border: 3px solid cyan;
+    color: cyan;
 }
